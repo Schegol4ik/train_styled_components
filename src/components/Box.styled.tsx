@@ -5,4 +5,5 @@ export const Box = styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 20px;
 `

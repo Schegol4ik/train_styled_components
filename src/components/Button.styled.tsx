@@ -14,7 +14,14 @@ export const Button = styled.button<ButtonType>`
     font-weight: 700;
     line-height: 20px; /* 200% */
     border: none;
-    
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(133, 122, 122, 0.68);
+
+    &:active {
+        box-shadow: none;
+        
+    }
+
     ${({btnType}) => btnType === "outline" && css<ButtonType>`
         border: 2px solid ${({color}) => color || "transparent"};
         color: ${({color}) => color};
@@ -25,5 +32,5 @@ export const Button = styled.button<ButtonType>`
         background-color: ${({color}) => color};
         color: #fff;
     `}
-    
+
 `
